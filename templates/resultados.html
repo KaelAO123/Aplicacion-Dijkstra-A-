@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resultados del Enrutamiento</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <style>
+        #map {
+            width: 100%;
+            height: 600px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <h1>Resultados del Enrutamiento</h1>
+        <h2>Comparación de Algoritmos</h2>
+        {{ tabla | safe }}
+        <h2>Mapa Interactivo</h2>
+        <div id="map">
+            {{ mapa | safe }}
+        </div>
+        <a href="/" class="btn btn-secondary mt-3">Calcular Otra Ruta</a>
+    </div>
+</body>
+</html>
